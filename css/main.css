@@ -1,0 +1,237 @@
+/*===========GLOBAL=============*/
+
+:root{
+    --primary-color: #BE3422;
+    --primary-color-opaque: rgba(190, 52, 34, 0.397);
+    --secondary-color: #641F16;
+    --page-color: #FFFCF7;
+    --text-color: #554742;
+    --accent-color: #1A2969;
+    --nav-link-size: 16px;
+}
+
+h1{
+    font-family: 'Nobile', sans-serif;
+    font-weight: 700;
+}
+
+h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h6{
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+body{
+    margin: 0px;
+    font-family: 'Antic Slab', serif;
+    font-size: 18px;
+}
+
+li{
+    font-size: var(--nav-link-size);
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--primary-color)
+}
+
+section{
+    height: 85vh;
+    background: var(--page-color);
+    padding: 0px 75px;
+}
+
+input{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #1A2969;
+}
+
+button{
+    width: 75px;
+    margin: 0 auto;
+    height: 30px;
+    text-align: center;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+}
+.section-header{
+    text-align: center;
+}
+/*============== Site Navigation ==================*/
+
+
+.site-nav{
+    background: white;
+    border-bottom: 2px solid var(--accent-color);
+    margin-bottom: 0px;
+}
+
+.site-nav .toggle{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.menu{
+    padding: 0px;
+    justify-self: left;
+}
+
+.menu li{
+    display: inline;
+    padding-right: 7px;
+}
+
+.social-media li{
+    display: inline;
+    font-size: 25px;
+    padding-right: 25px;
+    list-style-type: none;
+}
+
+#hero{
+    background-image: url("../img/view-from-driveway.jpg");
+    height: 85vh;
+    background-size: cover;
+}
+
+#hero .text-container{
+    width: 30%;
+    height: 350px;
+    padding: 28px 25px;
+    color: white;
+    background: var(--primary-color-opaque);
+    position: absolute;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    left: 60%;
+    top: 30%;
+}
+
+#hero .text-container h1{
+    justify-self: center;
+    align-self: end;
+    text-align: center;
+}
+#hero .text-container a{
+    color: white;
+    text-align: center;
+    justify-self: center;
+}
+
+/*===================TESTIMONIALS=================*/
+#testimonials .container{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 50px;
+}
+
+.testimonial{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 25px;
+    width: 75%;
+}
+
+.person{
+    justify-self: right;
+}
+
+.person .name{
+    text-align: center;
+}
+
+.review{
+    align-self: center;
+}
+
+/*=================Tour / Gallery ==============*/
+#tour{
+    background: var(--primary-color);
+}
+
+
+
+/*===============Book ===============*/
+#book-now{
+    background-image: url("../img/great-room-main-house.jpg");
+    color: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+}
+
+#book-now .container{
+    display: grid;
+    height: 50%;
+    grid-template-rows: 1fr 1.5fr;
+    justify-content: center;
+    align-content: center;
+}
+
+#book-now .section-header{
+    position: relative;
+    top: 20%;
+}
+
+.booking{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 15px;
+}
+
+.booking input{
+    width: 100%;
+    color: white;
+}
+
+input [type=text]::placeholder{
+    color: white;
+}
+
+.row-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+}
+
+.site-footer{
+    background: white;
+    height: 150px;
+}
+
+.site-footer .logo{
+    align-self: center;
+}
+
+.site-footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 50px;
+    align-content: center;
+    
+}
+
+.site-footer .menu li{
+    display: block;
+}
