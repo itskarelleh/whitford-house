@@ -22,7 +22,7 @@
 
                 <ul class="menu">
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="about.html#attraction">Attractions</a></li>
+                    <li><a href="about.html#attractions">Attractions</a></li>
                     <li><a href="index.html#book-now">Book Now</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="#tour">Virtual Tour</a></li>
@@ -66,14 +66,29 @@
                 </div>
             </div>
         </section>
-        <section id="tour" onload="createSlideShow()">
+        <section id="tour">
             <h1 class="section-header">Tour</h1>
             <!--Gallery goes here / Code in slideshow.js-->
+            <div class="container">
+                <div class="slideshow">
+                    <i class="fas fa-chevron-left" onclick="plusSlides(-1)"></i>
+                    <div class="slides">
+                        <img src="img/great-room-main-house.jpg">
+                        <p class="caption">Great room in Main House</p>
+                    </div>
+                    <div class="slides">
+                        <img src="img/south-room-in-main-house.jpg">
+                        <p class="caption">South room in Main House</p>
+                    </div>
+                    <i class="fas fa-chevron-right" onclick="plusSlides(1)"></i>
+                    
+                 </div>
+            </div>
         </section>
         <section id="book-now">
             <div class="container">
-                <h1 class="section-header">Start your delightful getaway today</h1>
                 <form class="booking">
+                    <h1 class="section-header">Start your delightful getaway today</h1>
                     <div class="row">
                         <input name="first-name" type="text" placeholder="First Name"> 
                     </div>
