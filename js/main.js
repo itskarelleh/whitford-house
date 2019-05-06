@@ -3,3 +3,9 @@
 
 //Slideshow
 //Change image every three seconds
+
+
+
+
+
+//Slideshow gallery
