@@ -71,18 +71,41 @@
             <!--Gallery goes here / Code in slideshow.js-->
             <div class="container">
                 <div class="slideshow">
-                    <i class="fas fa-chevron-left" onclick="plusSlides(-1)"></i>
-                    <div class="slides">
-                        <img src="img/great-room-main-house.jpg">
-                        <p class="caption">Great room in Main House</p>
+                    <div class="slides fade">
+                        <img src="img/view-from-driveway.jpg">
+                        <p class="caption">Main entrance</p>
                     </div>
-                    <div class="slides">
+                    <div class="slides fade">
                         <img src="img/south-room-in-main-house.jpg">
-                        <p class="caption">South room in Main House</p>
+                        <p class="caption">South room</p>
                     </div>
-                    <i class="fas fa-chevron-right" onclick="plusSlides(1)"></i>
-                    
-                 </div>
+                    <div class="slides fade">
+                        <img src="img/great-room-main-house.jpg">
+                        <p class="caption">Great room</p>
+                    </div>
+                    <div class="slides fade">
+                        <img src="img/great-room-sitting-area.jpg">
+                        <p class="caption">Great room sitting area</p>
+                    </div>
+                    <div class="slides fade">
+                        <img src="img/library-with-fireplace.jpg">
+                        <p class="caption">Library with fireplace</p>
+                    </div>
+                    <div class="slides fade">
+                        <img src="img/east-bedroom.jpg">
+                        <p class="caption">East bedroom</p>
+                    </div>
+                    <i class="fas fa-chevron-left prev" onclick="plusSlides(-1)"></i>
+                    <i class="fas fa-chevron-right next" onclick="plusSlides(1)"></i>
+                    <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                            <span class="dot" onclick="currentSlide(3)"></span> 
+                            <span class="dot" onclick="currentSlide(4)"></span> 
+                            <span class="dot" onclick="currentSlide(5)"></span> 
+                            <span class="dot" onclick="currentSlide(6)"></span> 
+                          </div> 
+                </div>
             </div>
         </section>
         <section id="book-now">
